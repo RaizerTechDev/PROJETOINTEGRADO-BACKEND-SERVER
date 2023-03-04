@@ -2,14 +2,11 @@
   "name": "burgerplace-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-    "engines": {
-    "node": "16.15.1"
-  },
+  "main": "app.js",  
 
-  "scripts": {
-      "start": "node app.js",
-    "dev": "json-server --watch db.json --port=3004 "
+  "scripts": {      
+    "dev": "json-server --watch db.json --port=3004 ",
+    "start": "node app"
   },
   "keywords": [],
   "repository": {

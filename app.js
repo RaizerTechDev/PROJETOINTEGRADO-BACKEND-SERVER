@@ -121,3 +121,5 @@ export default {
     this.getPedidos();
   },
 };
+
+app.listen(3004);
