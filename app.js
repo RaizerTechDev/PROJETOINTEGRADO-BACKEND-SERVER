@@ -27,7 +27,7 @@ export default {
   methods: {
     //listar os dados ingredientes
     async getIngredientes() {
-      const req = await fetch("http://localhost:3004/ingredientes");
+      const req = await fetch("http://localhost:3000/ingredientes");
       const data = await req.json();
 
       this.paes = data.paes;
@@ -49,7 +49,7 @@ export default {
 
       const dataJson = JSON.stringify(data); // Enviar como texto ao servidor
 
-      const req = await fetch("http://localhost:3004/burgers", {
+      const req = await fetch("http://localhost:3000/burgers", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: dataJson,
@@ -62,7 +62,7 @@ export default {
 
     // Vai listar Pedidos dos burgers
     async getPedidos() {
-      const req = await fetch("http://localhost:3004/burgers");
+      const req = await fetch("http://localhost:3000/burgers");
 
       const data = await req.json();
 
@@ -86,7 +86,7 @@ export default {
 
   // listar Status
   async getStatus() {
-    const req = await fetch("http://localhost:3004/status");
+    const req = await fetch("http://localhost:3000/status");
 
     const data = await req.json();
 
@@ -99,7 +99,7 @@ export default {
 
     const dataJson = JSON.stringify({ status: option }); //Para atualizar no banco do json-server
 
-    const req = await fetch(`http://localhost:3004/burgers/${id}`, {
+    const req = await fetch(`http://localhost:3000/burgers/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: dataJson,
@@ -112,7 +112,7 @@ export default {
 
   // deletar os burgers do pedido
   async deleteBurger(id) {
-    const req = await fetch(`http://localhost:3004/burgers/${id}`, {
+    const req = await fetch(`http://localhost:3000/burgers/${id}`, {
       method: "DELETE",
     });
 
