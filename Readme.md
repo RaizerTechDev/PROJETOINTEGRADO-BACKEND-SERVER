@@ -44,12 +44,16 @@
 
 "dev": `json-server --watch db.json --port=3004 `
 
+  "start": `node srvrt.js`
+
 },
 
 ---
 ### Executar o projeto no servidor:
 
 - `npm run dev` para rodar na porta: `http://localhost:3004/`
+
+- `json-server db.json –watch`
 
 ---
 #### <img src="https://media.giphy.com/media/eBqEQyWGdgSNgRVLCV/giphy.gif" align="center" height="95" width="95"> Testes com as ferramentas🚀

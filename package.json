@@ -2,11 +2,9 @@
   "name": "burgerplace-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",  
-
-  "scripts": {      
-    "dev": "json-server --watch db.json --port=3000 ",
-    "start": "node app"
+  "main": "server.js",
+  "scripts": {
+    "start": "node srvrt.js"
   },
   "keywords": [],
   "repository": {
